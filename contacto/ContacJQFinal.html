@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto Jquery Reserva</title>
+    <!--Tema base de CSS3 -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../practicafinalJQ.css">
+    <!--Tema base para JQueryUI -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/humanity/jquery-ui.css" rel="stylesheet">
+    <!--<link href="css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet"> -->
+    <!--Libreria JQuery 3.1.0 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Libreria JQuery UI 1.12.0 -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"> </script>
+    <!--Contactable -->
+    <script  src="../contactable.js"></script>
+    <link rel="stylesheet" href="../contactable.css" type="text/css" />
+    
+	
+	<script>
+	$(function(){
+		$('#my-contact-div').contactable(
+        {
+            subject: 'feedback URL:'+location.href,
+            header: 'Contacto',
+            url: 'mail.php',
+            name: 'Nombre',
+            email: 'Email',
+            dropdownTitle: 'Asunto',
+            dropdownOptions: ['General', 'Quiero recibir más información', 'Sugerencia'],
+            message : 'Mensaje',
+            submit : 'ENVIA',
+            recievedMsg : 'Gracias por tu mensaje',
+            notRecievedMsg : 'Lo siento pero tu mensaje no se ha podido enviar, vuelve a intentarlo',
+            footer: 'Ponte en contacto con nosotros, valoramos tu opinión',
+            hideOnSubmit: true
+        });
+	});	
+
+	
+	</script>
+   
+    
+    
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <img src="../imagenes/marvel2.jpeg" alt="logo"  class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href='../index/index.html' class="enlace" >Inicio</a></li>
+                <li><a href='../informacion/infoJQFinal.html' class="enlace">Información</a></li>
+                <li><a href='../reserva/ReseJQFinal.html' class="enlace" >Reservas</a></li>
+                <li><a href='ContacJQFinal.html' class="enlace" >Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">  
+    <div id="my-contact-div">CONTACTO<!-- contactable html placeholder --></div>
+    <section id='col1'>
+        <h2>Dónde estamos?</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.559833881724!2d2.15491831534678!3d41.3836470041901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a288f85e22e3%3A0x9d2effd8dc34b843!2sCipsa%20Academia%20Barcelona!5e0!3m2!1ses!2ses!4v1580143308860!5m2!1ses!2ses" id="mapacontacto" ></iframe>
+        
+      </section>
+
+    <section id='col2'>
+
+        <h3>  CIPSA - Centro Informàtica Profesional   </h3>
+
+        <p> C/ Comte d'Urgell, 100 </p>
+        <p>  08011 Barcelona </p>
+        <p>  934 26 50 87 </p>
+    </section> 
+</div>
+  
+<footer style="height: 10px;" class="container-fluid">
+    <p>Cipsa (2019)</p>
+    <p>Curso de programación web</p> 
+</footer>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

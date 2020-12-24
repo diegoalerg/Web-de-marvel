@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto JQuery </title>
+	<!--Tema base de CSS3 -->
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../practicafinalJQ.css">
+    <!--Tema base para JQueryUI -->
+	<link href="https://code.jquery.com/ui/1.12.1/themes/humanity/jquery-ui.css" rel="stylesheet">
+	<!--<link href="css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet"> -->
+    <!--Libreria JQuery 3.1.0 -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Libreria JQuery UI 1.12.0 -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"> </script>
+    
+    <!-- fancybox -->
+
+
+
+	<!-- <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script> -->
+	<!-- Add fancyBox main JS and CSS files -->
+	<!-- <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" /> -->
+
+	<!-- Add Button helper (this is optional) -->
+	<!-- <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script> -->
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<!-- <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> -->
+
+	<!-- Add Media helper (this is optional) -->
+	<!-- <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script> -->
+	
+	
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script>
+	
+	 $(function() {
+		$( "#tabs" ).tabs();
+	  });
+	
+	$(function() {
+		$( "#accordion" ).accordion({
+		  collapsible: true,
+		  heightStyle: "content"
+		});
+	  });
+
+	
+    $(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			/* $('.fancybox').fancybox({
+			 
+             afterClose: function() {
+                $(".fancybox").show();
+            }
+             
+			});
+}); */
+	
+  $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect  : 'none'
+  });
+});
+    
+    
+	</script>
+
+</head>
+<body>
+<header>
+	<div class="container-fluid">
+		<img src="../imagenes/marvel2.jpeg" alt="logo" height="400" class="logo">
+		<nav class="menu">
+			<ul>
+				<li><a href='../index/index.html' class="enlace" >Inicio</a></li>
+				<li><a href='infoJQFinal.html' class="enlace">Información</a></li>
+				<li><a href='../reserva/ReseJQFinal.html' class="enlace" >Reservas</a></li>
+				<li><a href='../contacto/ContacJQFinal.html' class="enlace" >Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<div class="container">
+		<section class="main row">
+			<article id='col1' class="col-sm-12">
+				<a class="fancybox" rel="gallery1" href="../imagenes/spiderman.jpg" title="Twilight Memories (doraartem)">
+					<img src="../imagenes/spiderman.jpg" class="caratula" alt="" />
+				</a>
+				<a class="fancybox" rel="gallery1" href="../imagenes/blackpanther.jpg" title="Electrical Power Lines and Pylons disappear over t.. (pautliubomir)">
+					<img src="../imagenes/blackpanther.jpg" class="caratula" alt="" />
+				</a>
+				<a class="fancybox" rel="gallery1" href="../imagenes/capitanamerica.jpg" title="Morning Godafoss (Brads5)">
+					<img src="../imagenes/capitanamerica.jpg" class="caratula" alt="" />
+				</a>
+				<a class="fancybox" rel="gallery1" href="../imagenes/ironman.jpg" title="Vertical - Special Edition! (cedarsphoto)">
+					<img src="../imagenes/ironman.jpg" class="caratula" alt="" />
+				</a>
+			</article>
+			
+			<aside id='col2' class="col-sm-12">
+				<div id="accordion">
+					<h3>Spiderman Regreso a casa</h3>
+					<div>
+						<p>Spider-Man: Homecoming (titulada Spider-Man: de regreso a casa en Hispanoamérica) es una película de superhéroes estadounidense de 2017 basada en el personaje de Marvel Comics Spider-Man, co-producida por Columbia Pictures y Marvel Studios, y distribuida por Sony Pictures Releasing. Es el segundo reinicio cinematográfico de Spider-Man y la decimosexta película del Universo cinematográfico de Marvel (MCU). La película es dirigida por Jon Watts, a partir de un guion de los equipos de Jonathan Goldstein y John Francis Daley, Watts y Christopher Ford, y Chris McKenna y Erik Sommers, y es protagonizada por Tom Holland como el personaje principal, junto a Michael Keaton, Jon Favreau, Zendaya, Donald Glover, Tyne Daly, Marisa Tomei y Robert Downey Jr. En Spider-Man: Homecoming, Peter Parker intenta equilibrar la vida escolar con ser Spider-Man, mientras enfrenta al Buitre.</p>
+					</div>
+					<h3>Black Panther</h3>
+					<div>
+						<p>Pantera Negra (Black Panther en su título original) es una película de superhéroes estadounidense de 2018 basada en el personaje de Marvel Comics Pantera Negra. Producida por Marvel Studios y distribuida por Walt Disney Studios, es la decimoctava película del Universo cinematográfico de Marvel (MCU). La película es dirigida por Ryan Coogler, que escribió el guion con Joe Robert Cole, y es protagonizada por Chadwick Boseman como T'Challa / Black Panther, junto con Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Daniel Kaluuya, Letitia Wright, Winston Duke, Angela Bassett, Forest Whitaker y Andy Serkis. En Black Panther, T'Challa es coronado rey de Wakanda luego de la muerte de su padre, pero su soberanía es cuestionada por un adversario que planea abandonar las políticas aislacionistas del país e iniciar una revolución mundial. </p>
+					</div>
+					<h3>Capitan America</h3>
+					<div>
+						<p>Captain America: The Winter Soldier (titulada Capitán América: el Soldado de Invierno en España y Capitán América y el Soldado del Invierno en Hispanoamérica) es una película de superhéroes estadounidense de 2014 basada en el personaje de Marvel Comics Capitán América, producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures. Es la secuela de Capitán América: El primer vengador (2011) y la novena película del Universo cinematográfico de Marvel (MCU). La película es dirigida por Anthony y Joe Russo, con un guion de Christopher Markus y Stephen McFeely. Es protagonizada por Chris Evans, Scarlett Johansson, Sebastian Stan, Anthony Mackie, Cobie Smulders, Frank Grillo, Emily VanCamp, Hayley Atwell, Robert Redford y Samuel L. Jackson. En Captain America: The Winter Soldier, Capitán América, Viuda Negra y Falcon se unen para descubrir una conspiración dentro de S.H.I.E.L.D. y enfrentar a un misterioso asesino conocido como el Soldado del Invierno. </p>
+					</div>
+					<h3>Ironman 3</h3>
+					<div>
+						<p> Iron Man 3 (estilizado en pantalla como Iron Man Three)4​ es una película de superhéroes estadounidense de 2013 basada en el personaje de Marvel Comics Iron Man, producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures.N 1​ Es la secuela de Iron Man (2008) y Iron Man 2 (2010), y la séptima película en el Universo cinematográfico de Marvel (MCU). La película es dirigida por Shane Black, que escribió el guion con Drew Pearce, y es protagonizada por Robert Downey Jr. como Tony Stark / Iron Man, junto a Gwyneth Paltrow, Don Cheadle, Guy Pearce, Rebecca Hall, Stéphanie Szostak, James Badge Dale, Jon Favreau y Ben Kingsley. En Iron Man 3, Tony Stark lucha con las ramificaciones de los eventos de The Avengers, durante una campaña nacional de terrorismo en los Estados Unidos al mando del misterioso Mandarín. </p>
+					</div>
+				</div>
+			</aside> 
+		</section>
+	</div>
+			
+<footer>
+    <p>Cipsa (2019)</p>
+    <p>Curso de programación web</p>
+</footer>
+
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

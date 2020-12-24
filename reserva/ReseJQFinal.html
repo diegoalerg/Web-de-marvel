@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <title>Proyecto Jquery Reserva</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!--Tema base de CSS3 -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../practicafinalJQ.css">
+    <!--Tema base para JQueryUI -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/humanity/jquery-ui.css" rel="stylesheet">
+    <!--<link href="css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet"> -->
+    <!--Libreria JQuery 3.1.0 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Libreria JQuery UI 1.12.0 -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"> </script>
+	
+	<script>
+    
+              // Traducción al español
+$(function($){
+    $.datepicker.regional['es'] = {
+        closeText: 'Cerrar',
+        prevText: '<Ant',
+        nextText: 'Sig>',
+        currentText: 'Hoy',
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        weekHeader: 'Sm',
+        dateFormat: 'dd/mm/yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };
+    $.datepicker.setDefaults($.datepicker.regional['es']);
+});
+
+    
+    
+		 $(function() {
+			$( "#datepicker" ).datepicker({
+			 
+              onSelect: function () {
+            var dia = $("#datepicker").datepicker('getDate').getDate();                 
+            var mes = $("#datepicker").datepicker('getDate').getMonth() + 1;             
+            var any = $("#datepicker").datepicker('getDate').getFullYear();
+            var fullDate = "<label>Fecha</label><input type='text' name='fecha' value='" + dia + "-" + mes + "-" + any+ "' id='datepicker2'/>";
+            $('#fecha').html(fullDate);
+
+            }
+
+			});
+			
+		  });
+          
+
+$(function() {
+			$( "#datepicker2" ).datepicker();
+			
+		  });
+
+
+
+	</script>
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <img src="../imagenes/marvel2.jpeg" alt="logo"  class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href='../index/index.html' class="enlace" >Inicio</a></li>
+                <li><a href='../informacion/infoJQFinal.html' class="enlace">Información</a></li>
+                <li><a href='ReseJQFinal.html' class="enlace" >Reservas</a></li>
+                <li><a href='../contacto/ContacJQFinal.html' class="enlace" >Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="container">
+        <form  class="form-horizontal"  >
+ 
+            <div class="form-group">
+                <label for="fecha" class="control-label col-md-3">Fecha</label>
+                <div class="col-md-9">
+                    <input type="text" name="fecha" class="form-control" id='datepicker2'/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="personas" class="control-label col-md-3">Cantidad de personas</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" name="cantidad" />
+                </div>
+            </div>
+
+            <div class="form-group has-warning">
+                <label for="correo" class="control-label col-md-3">Correo:</label> 
+                <div class="col-md-9">
+                    <input type="text" class="form-control" name="email" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <button class="btn btn-success" type="submit" >Enviar  </button>
+                </div>
+            </div>
+               
+        </form>
+       
+    </div>
+
+  
+<footer>
+    <p>Cipsa (2019)</p>
+    <p>Curso de programación web</p>
+</footer>
+
+<script src="../../js/bootstrap.min.js"></script>
+
+</body>
+</html>

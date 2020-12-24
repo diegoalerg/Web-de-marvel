@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto JQuery </title>
+    <!--Tema base para JQueryUI -->
+	<link href="https://code.jquery.com/ui/1.12.1/themes/humanity/jquery-ui.css" rel="stylesheet">
+	<!-- Enlaces nivoslider -->    
+    <link rel="stylesheet" href="nivo-slider/themes/light/light.css" type="text/css"/>
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css"/>
+     <!--Tema base de CSS3 -->
+    <link rel="stylesheet" type="text/css" href="../practicafinalJQ.css">
+    <!--<link href="css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet"> -->
+    <!--Libreria JQuery 3.1.0 -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Libreria JQuery UI 1.12.0 -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"> </script>
+	<script  src="nivo-slider/jquery.nivo.slider.js"></script> 
+    <style>
+
+        
+
+.slider-wrapper {
+    width: 20%;
+    height: 20%;
+    margin: 100px auto;
+}
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+    </style>
+	
+	<script>
+	$( document ).ready(function() {
+    	 $(function() {
+    		$( "#tabs" ).tabs();
+    	  });
+	
+    
+    
+        $('#slider').nivoSlider({
+        effect: 'random',
+        slices: 15,
+        boxCols: 8,
+        boxRows: 4,
+        animSpeed: 500,
+        pauseTime: 3000,
+        startSlide: 0,
+        directionNav: true,
+        controlNav: true,
+        controlNavThumbs: false,
+        pauseOnHover: true,
+        manualAdvance: false,
+        prevText: '  ',
+        nextText: '  ',
+        randomStart: false,
+        beforeChange: function(){},
+        afterChange: function(){},
+        slideshowEnd: function(){},
+        lastSlide: function(){},
+        afterLoad: function(){}
+
+            
+         });
+    });
+
+     
+    
+
+	
+	</script>
+
+</head>
+<body>
+<header>
+<img src="../imagenes/marvel2.jpeg" alt="logo"  class="logo">
+<nav class="menu">
+<ul>
+<li><a href='index.html' class="enlace" >Inicio</a></li>
+<li><a href='../informacion/infoJQFinal.html' class="enlace">Información</a></li>
+<li><a href='../reserva/ReseJQFinal.html' class="enlace" >Reservas</a></li>
+<li><a href='../contacto/ContacJQFinal.html' class="enlace" >Contacto</a></li>
+</ul>
+</nav>
+
+</header>
+    <div id="wrapper">
+       <div class="slider-wrapper theme-dark">
+           <div id="slider" class="nivoSlider">
+                <img src="../imagenes/spiderman.jpg" data-thumb="nivo-slider/demo/imagenes/spiderman.jpg" alt="" title='primera imagen'/>
+                <img src="../imagenes/blackpanther.jpg" data-thumb="nivo-slider/demo/imagenes/blackpanther.jpg" alt="" title="segunda imagen" />
+                <img src="../imagenes/capitanamerica.jpg" data-thumb="nivo-slider/demo/imagenes/capitanamerica.jpg" alt="" title="tercera imagen" />
+                <img src="../imagenes/ironman.jpg" data-thumb="nivo-slider/demo/imagenes/ironman.jpg" alt="" title="cuarta imagen" />
+            </div>
+
+       </div>
+             
+    </div>
+       
+ 
+
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1">Historia</a></li>
+<li><a href="#tabs-2">Concepto</a></li>
+<li><a href="#tabs-3">Otros Universos</a></li>
+</ul>
+<div id="tabs-1">
+<p>A lo largo de los años, a medida que el número de títulos publicados se incrementaba y aumentaba el número de historias pasadas, se fue haciendo más y más difícil mantener la coherencia interna y la continuidad. A diferencia de DC Comics (su principal competidor), Marvel nunca ha hecho ningún recomienzo de su continuidad. En los últimos años, se han hecho intentos menores de hacer historias más accesibles para nuevos lectores, como la línea Heroes Reborn, que narraban las aventuras de algunos de los principales héroes de la editorial, cuando fueron temporalmente exiliados en un universo de bolsillo, olvidando durante ese tiempo su pasado y empezando desde cero.</p>
+</div>
+<div id="tabs-2">
+<p>El Universo Marvel está fuertemente basado en el mundo real. La Tierra en el Universo Marvel tiene todas las características de la real: mismos países, mismas personalidades (políticos, estrellas de cine, etc.), mismos acontecimientos históricos (como la Segunda Guerra Mundial), y así sucesivamente. Sin embargo, también contiene muchos elementos de ficción: países como Wakanda y Latveria (naciones muy pequeñas), y organizaciones como la agencia de espionaje S.H.I.E.L.D. y su enemigo, HYDRA, y A.I.M. En 2009, Marvel oficialmente describió la geografía del mundo en una miniserie de dos partes, el Atlas de Marvel.</p>
+</div>
+<div id="tabs-3">
+<p>Además del universo Marvel principal hay más universos con los mismos personajes pero con diferentes características y orígenes, creados por la misma editorial pero sin ninguna relación con el universo Marvel principal. Por ejemplo: Ultimate Marvel, Marvel Zombies, etc.</p>
+
+</div>
+</div>
+
+    
+
+<footer>
+    <p>Cipsa (2019)</p>
+    <p>Curso de programación web</p>
+</footer>
+
+
+</body>
+</html>
